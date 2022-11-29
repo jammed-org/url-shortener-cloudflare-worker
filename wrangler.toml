@@ -1,0 +1,16 @@
+name = "links-jmmli"
+main = "src/index.ts"
+compatibility_date = "2022-11-27"
+
+kv_namespaces = [
+  { binding = "URLS", id = "1e...", preview_id = "3f..." },
+  { binding = "URLS_ADDED", id = "41...", preview_id = "ff..." }
+]
+
+routes = [
+  { pattern = "my-magical-url.com", custom_domain = true, zone_id = "7c..." }
+]
+
+[vars]
+# The necessary secrets are:
+# - CREATE_SECRET_KEY (for creating new links)
